@@ -8,9 +8,9 @@ let sessoes = document.getElementById('sessoes')
 let segundos
 
 // Acessa os audios de alertas e colcoca nas variáveis
-var bell = new Audio("./audio/bell.mp3")
-var volta = new Audio("./audio/volta.mp3")
-var final = new Audio("./audio/final.mp3")
+var bell = document.getElementById('bellsong')
+var volta = document.getElementById('bellsong')
+var final = document.getElementById('bellsong')
 
 // Acessa a tag audio e os botões de pause e play
 var lofi = document.getElementById('lofi')

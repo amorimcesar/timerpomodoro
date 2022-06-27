@@ -42,3 +42,7 @@ h2{
 #timer{
   display: none !important;
 }
+
+button {
+  border-radius: 15px !important;
+}
