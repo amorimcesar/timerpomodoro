@@ -9,8 +9,6 @@ let segundos
 
 // Acessa os audios de alertas e colcoca nas variáveis
 var bell = document.getElementById('bellsong')
-var volta = document.getElementById('bellsong')
-var final = document.getElementById('bellsong')
 
 // Acessa a tag audio e os botões de pause e play
 var lofi = document.getElementById('lofi')
@@ -216,7 +214,7 @@ function momentoPausa() {
             // Verificando se o valor de ses é menor ou igual a 0
             if (ses <= 0) {
                // Toca o audio final
-               final.play()
+               bell.play()
                // Limpa o localStorage
                localStorage.clear()
 
@@ -228,7 +226,7 @@ function momentoPausa() {
                document.getElementById('fim').style.setProperty('display', 'block', 'important')
             } else {
                // Senão toca o audio volta
-               volta.play();
+               bell.play();
                // chama a função de momentoAcao novamente para reiniciar o ciclo
                momentoAcao()
             }
